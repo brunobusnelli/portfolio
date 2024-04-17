@@ -1,0 +1,437 @@
+$breakpoint-l: 425px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-laptopL: 1440px;
+$breakpoint-monitor: 1920px;
+$breakpoint-4k: 2560px;
+
+
+.lautaro {
+    height: calc(100vh - 50px);
+    overflow: hidden;
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    position: relative;
+        .wrapper {
+        max-width: 1000px;
+        height: 100%;
+        margin: auto;
+        .textContainer {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px; 
+            h2 {
+            font-size: 20px;
+            letter-spacing: 1px;
+            }
+            h1{
+            font-size: 35px;
+            color: rebeccapurple;
+            letter-spacing: 5px;
+            } 
+            .buttons {
+            button {
+              padding: 15px;
+              border: 1px solid rebeccapurple;
+              border-radius: 10px;
+              background-color: transparent;
+              color: white;
+              margin-right: 20px;
+              cursor: pointer;
+              font-weight: 300px;
+              font-size: 1rem;
+              transition: 0.2s;
+              }
+              button:hover {
+              border: 1px solid white;
+              }
+            }
+            img {
+                width: 50px;
+                
+            }      
+        }
+    }
+        .imageContainer {
+        height: 100%;
+        width: 40%;
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        padding-top: 11.9rem;
+        padding-bottom: 1rem;
+            img {
+             width: 86%;
+            }
+        }
+        .slindingTextContainer {
+        position: absolute;
+        font-size: 35vh;
+        bottom: -65px;
+        white-space: nowrap;
+        color: #ffffff09;
+        width: 50%;
+        font-weight: bold;
+        }
+            
+    }
+
+@media screen and (min-width: 320px) and (max-width: 379px) {
+    .lautaro {
+        .wrapper {
+            .textContainer {
+                height: 65%;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                text-align: center;
+                h2 {
+                    font-size: 16px;
+                }
+                h1{
+                    font-size: 21px;
+                }
+                .buttons {
+                    width: 75%;
+                    display: flex;
+                    justify-content: space-around;
+                    margin-bottom: 2rem;
+                    button {
+                    margin-top: 13px;
+                    padding: 12px;
+                    margin-bottom: 20px;
+                    margin-right: 0;
+                    }
+                }
+            }
+        }
+        .imageContainer {
+            height: 32%;
+            width: 55%;
+            top: unset;
+            bottom: 0;
+            padding-top: 0;
+            padding-bottom: 10px !important;
+            margin-right: 4.6rem;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+@media screen and (min-width: 379px) and (max-width: 434px) {
+    .lautaro {
+        .wrapper {
+            .textContainer {
+                height: 65%;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                text-align: center;
+                h2 {
+                    font-size: 18.5px;
+                    margin-bottom: 0.5rem;
+
+                }
+                h1{
+                    font-size: 23px;
+                    margin-bottom: 0.5rem;
+                }
+                .buttons {
+                    width: 70%;
+                    display: flex;
+                    justify-content: space-around;
+                    margin-bottom: 2rem;
+                    button {
+                    margin-top: 13px;
+                    padding: 12px;
+                    margin-bottom: 20px;
+                    margin-right: 0;
+                    }
+                }
+            }
+        }
+        .imageContainer {
+            height: 36%;
+            width: 63%;
+            top: unset;
+            bottom: 0;
+            padding-top: 0;
+            padding-bottom: 25px !important;
+            margin-right: 3.8rem;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+@media screen and (min-width: 435px) and (max-width: 728px) {
+    .lautaro {
+        .wrapper {
+            .textContainer {
+                height: 55%;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                text-align: center;
+                h2 {
+                    font-size: 20px;
+                    margin-bottom: 0.5rem;
+
+                }
+                h1{
+                    font-size: 25px;
+                    margin-bottom: 0.5rem;
+                }
+                .buttons {
+                    width: 70%;
+                    display: flex;
+                    justify-content: space-around;
+                    margin-bottom: 2rem;
+                    button {
+                    margin-top: 13px;
+                    padding: 12px;
+                    margin-bottom: 20px;
+                    margin-right: 0;
+                    }
+                }
+            }
+        }
+        .imageContainer {
+            height: 40%;
+            width: 68%;
+            top: unset;
+            bottom: 0;
+            padding-top: 0;
+            padding-bottom: 25px !important;
+            margin-right: 3rem;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+@media screen and (min-width: 729px) and (max-width: 799px) {
+    .lautaro {
+        .wrapper {
+            .textContainer {
+                height: 55%;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                text-align: center;
+                h2 {
+                    font-size: 28px;
+                    margin-bottom: 0.5rem;
+
+                }
+                h1{
+                    font-size:35px;
+                    margin-bottom: 0.5rem;
+                }
+                .buttons {
+                    // border: 1px solid salmon;
+                    width: 70%;
+                    display: flex;
+                    justify-content: space-around;
+                    margin-bottom: 2rem;
+                    button {
+                    margin-top: 13px;
+                    padding: 18px;
+                    margin-bottom: 20px;
+                    margin-right: 0;
+                    font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+        .imageContainer {
+            height: 40%;
+            width: 52%;
+            top: unset;
+            bottom: 0;
+            padding-top: 0;
+            padding-bottom: 25px !important;
+            margin-right: 10rem;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 920px) {
+    .lautaro {
+        .wrapper {
+            .textContainer {
+                height: 55%;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                text-align: center;
+                h2 {
+                    font-size: 30px;
+                    margin-bottom: 0.5rem;
+
+                }
+                h1{
+                    font-size:40px;
+                    margin-bottom: 0.5rem;
+                }
+                .buttons {
+                    width: 70%;
+                    display: flex;
+                    justify-content: space-around;
+                    margin-bottom: 2rem;
+                    button {
+                    margin-top: 13px;
+                    padding: 18px;
+                    margin-bottom: 20px;
+                    margin-right: 0;
+                    font-size: 1.5rem;
+                    }
+                }
+                img {
+                    width: 80px;
+                }
+            }
+        }
+        .imageContainer {
+            height: 40%;
+            width: 55%;
+            top: unset;
+            bottom: 0;
+            padding-top: 0;
+            padding-bottom: 25px !important;
+            margin-right: 10rem;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1400px) and (max-width: 1800px) {
+    .lautaro {
+        .wrapper {
+            .textContainer {
+               width: 60%;
+                h2 {
+                    font-size: 2rem;
+                }
+                h1{
+                    font-size: 4rem;
+                }
+                .buttons {
+                    button {
+                        padding: 20px;
+                        font-size: 1.6rem;
+                        margin-right: 4rem;
+                    }
+                }
+                img {
+                    width: 90px;
+                }
+            }
+        }
+        .imageContainer {
+            height: 55%;
+            width: 45%;
+            top: unset;
+            bottom: 0;
+            padding-top: 0;
+            margin-right: 1rem;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1900px) and (max-width: 1999px) {
+    .lautaro {
+        .wrapper {
+            margin-left: 12rem;
+            .textContainer {
+               width: 90%;
+                h2 {
+                    font-size: 2.1rem;
+                }
+                h1{
+                    font-size: 4rem;
+                }
+                .buttons {
+                    button {
+                        padding: 20px;
+                        font-size: 1.9rem;
+                        margin-right: 4rem;
+                    }
+                }
+                img {
+                    width: 90px;
+                }
+            }
+        }
+        .imageContainer {
+            height: 70%;
+            width: 41%;
+            top: unset;
+            bottom: 0;
+            padding-top: 0;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+@media screen and (min-width: 2000px) {
+    .lautaro {
+        .wrapper {
+            margin-left: 12rem;
+            .textContainer {
+               width: 90%;
+                h2 {
+                    font-size: 2.1rem;
+                }
+                h1{
+                    font-size: 4rem;
+                }
+                .buttons {
+                    button {
+                        padding: 20px;
+                        font-size: 1.9rem;
+                        margin-right: 4rem;
+                    }
+                }
+                img {
+                    width: 90px;
+                }
+            }
+        }
+        .imageContainer {
+            height: 80%;
+            width: 45%;
+            top: unset;
+            bottom: 0;
+            padding-top: 0;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

@@ -1,0 +1,381 @@
+.portfolio {
+  position: relative;
+    .progress {
+     position: sticky;
+     top: 0;
+     left: 0;
+     padding-top: 50px;
+     text-align: center;
+     font-size: 30px;
+     letter-spacing: 1px;
+       .progressBar {
+            height: 1.9px;
+                background-color: rebeccapurple;
+        }
+    }
+    .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+        .wrapper {
+          max-width: 1200px;
+          height: 100%;
+          margin: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 50px;  
+            .imageContainer {
+                flex:1;
+                height: 42%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .textContainer {
+               flex: 1;
+               display: flex;
+               flex-direction: column;
+               gap: 30px;
+                    h2 {
+                       font-size: 50px; 
+                    }
+                    p {
+                       color: gray;
+                       font-size: 18px;
+                    }
+                    button {
+                       background-color: rebeccapurple;
+                       border-radius: 10px;
+                       padding: 10px;
+                       width: 200px;
+                       cursor: pointer;
+                       font-size: 17.5px;
+                       transition: 0.2s;
+                       border: 1px solid #0c0c1d;
+                       color: white;
+                    }
+                    button:hover {
+                        background-color: #0c0c1d;
+                        border: 1px solid rebeccapurple;
+                    }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:320px) and (max-width:390px) {
+    .portfolio {
+     position: relative;
+      .progress {
+          padding-top: calc(100vh - 80px);
+          font-size: 15px;
+            .progressBar {
+                height: 1.9px;
+            }
+       }
+        .container{
+            .wrapper {
+                flex-direction: column;
+                .imageContainer {
+                    width: 90%;
+                    flex: 0;
+                    padding-top: calc(100vh - 610px);
+                    img {
+                        object-fit: contain;
+                    }
+                }
+                .textContainer {
+                    width: 90%;
+                    transform: none !important;
+                    align-items: center;
+                    text-align: center;
+                    h2 {
+                        font-size: 30px; 
+
+                    }
+                    p {
+                        font-size: 15px;    
+                    }
+                    button {
+                        position: relative;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:400px) and (max-width:575px) {
+    .portfolio {
+     position: relative;
+      .progress {
+          padding-top: calc(100vh - 100px);
+          font-size: 18px;
+            .progressBar {
+                height: 1.9px;
+            }
+       }
+        .container{
+            .wrapper {
+                flex-direction: column;
+                .imageContainer {
+                    width: 90%;
+                    flex: 0;
+                    padding-top: calc(100vh - 800px);
+                    img {
+                        object-fit: contain;
+                    }
+                }
+                .textContainer {
+                    width: 90%;
+                    transform: none !important;
+                    align-items: center;
+                    text-align: center;
+                    h2 {
+                        font-size: 40px; 
+
+                    }
+                    p {
+                        font-size: 20px;    
+                    }
+                    button {
+                        font-size: 1.2rem;
+                        position: relative;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:600px) and (max-width:900px) {
+    .portfolio {
+      .progress {
+          font-size: 25px;
+            .progressBar {
+                height: 4px;
+            }
+       }
+        .container{
+            .wrapper {
+                flex-direction: column;
+                .imageContainer {
+                    width: 100%;
+                    flex: 0.5;
+                    padding-top: calc(100vh - 860px);
+                    img {
+                        object-fit: contain;
+                    }
+                }
+                .textContainer {
+                    width: 90%;
+                    transform: none !important;
+                    align-items: center;
+                    text-align: center;
+                    h2 {
+                        font-size: 60px; 
+
+                    }
+                    p {
+                        font-size: 28px;    
+                    }
+                    button {
+                        font-size: 1.8rem;
+                        margin-top: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:1020px) and (max-width:1439px) {
+  .portfolio {
+    position: relative;
+    .progress {
+     position: sticky;
+     top: 0;
+     left: 0;
+     padding-top: 50px;
+     text-align: center;
+     font-size: 30px;
+     letter-spacing: 1px;
+       .progressBar {
+            height: 1.9px;
+        }
+    }
+    .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+        .wrapper {
+          max-width: 1200px;
+          height: 100%;
+          margin: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 50px;  
+            .imageContainer {
+                flex:1.5;
+                height: 50%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .textContainer {
+               flex: 1;
+               display: flex;
+               flex-direction: column;
+               gap: 30px;
+                    h2 {
+                       font-size: 50px; 
+                    }
+                    p {
+                       color: gray;
+                       font-size: 18px;
+                    }
+                    button {
+                       border-radius: 10px;
+                       padding: 10px;
+                       width: 200px;
+                       cursor: pointer;
+                       font-size: 17.5px;
+                       transition: 0.2s;
+                       border: 1px solid #0c0c1d;
+                       color: white;
+                    }
+            }
+        }
+    }
+  }
+}
+@media screen and (min-width:1720px) and (max-width:2200px) {
+    .portfolio {
+      position: relative;
+      .progress {
+       position: sticky;
+       top: 0;
+       left: 0;
+       padding-top: 50px;
+       text-align: center;
+       font-size: 40px;
+       letter-spacing: 1px;
+         .progressBar {
+              height: 1.9px;
+          }
+      }
+      .container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+          .wrapper {
+            max-width: 1500px;
+              .imageContainer {
+                  flex:1.5;
+                  height: 38%;
+                  img {
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                  }
+              }
+              .textContainer {
+                 flex: 1;
+                 display: flex;
+                 flex-direction: column;
+                 gap: 30px;
+                      h2 {
+                         font-size: 60px; 
+                      }
+                      p {
+                         color: gray;
+                         font-size: 25px;
+                      }
+                      button {
+                         border-radius: 10px;
+                         padding: 10px;
+                         width: 200px;
+                         cursor: pointer;
+                         font-size: 25px;
+                         transition: 0.2s;
+                         border: 1px solid #0c0c1d;
+                         color: white;
+                      }
+              }
+          }
+      }
+    }
+}
+@media screen and (min-width:2201px) {
+    .portfolio {
+      position: relative;
+      .progress {
+       position: sticky;
+       top: 0;
+       left: 0;
+       padding-top: 50px;
+       text-align: center;
+       font-size: 40px;
+       letter-spacing: 1px;
+         .progressBar {
+              height: 1.9px;
+          }
+      }
+      .container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+          .wrapper {
+            max-width: 1800px;
+              .imageContainer {
+                  flex:1.5;
+                  height: 50%;
+                  img {
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                  }
+              }
+              .textContainer {
+                 flex: 1;
+                 display: flex;
+                 flex-direction: column;
+                 gap: 30px;
+                      h2 {
+                         font-size: 80px; 
+                      }
+                      p {
+                         color: gray;
+                         font-size: 32px;
+                      }
+                      button {
+                         border-radius: 10px;
+                         padding: 10px;
+                         width: 200px;
+                         cursor: pointer;
+                         font-size: 35px;
+                         transition: 0.2s;
+                         border: 1px solid #0c0c1d;
+                         color: white;
+                      }
+              }
+          }
+      }
+    }
+}

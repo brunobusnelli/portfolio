@@ -1,0 +1,50 @@
+$breakpoint-s: 374px;
+$breakpoint-m: 375px;
+$breakpoint-l: 425px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-laptopL: 1440px;
+$breakpoint-monitor: 1920px;
+$breakpoint-4k: 2560px;
+
+@media screen and (max-width: $breakpoint-s) {
+    svg {
+        width: 23px;
+        height: 23px;
+    }
+}
+@media screen and (min-width: $breakpoint-m) {
+    svg {
+        width: 28px;
+        height: 28px;
+        // background-color: rgb(255, 8, 243);
+    }
+}
+@media screen and (min-width: $breakpoint-tablet) {
+    svg {
+        width: 30px;
+        height: 30px;
+        // background-color: rgb(255, 8, 243);
+    }
+}
+@media screen and (min-width: $breakpoint-laptop) {
+    svg {
+        width: 33px;
+        height: 33px;
+        // background-color: rgb(255, 8, 243);
+    }
+}
+@media screen and (min-width: $breakpoint-monitor) {
+    svg {
+        width: 45px;
+        height: 45px;
+        // background-color: rgb(255, 8, 243);
+    }
+}
+@media screen and (min-width: $breakpoint-4k) {
+    svg {
+        width: 50px;
+        height: 50px;
+        // background-color: rgb(255, 8, 243);
+    }
+}

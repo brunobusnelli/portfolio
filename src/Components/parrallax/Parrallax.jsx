@@ -1,0 +1,47 @@
+import "./Parrallax.scss";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import planets from "../../Image/planets.png";
+import sun from "../../Image/sun.png";
+
+const Parrallax = ({ type }) => {
+  const ref = useRef();
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+
+  const yText = useTransform(scrollYProgress, [0, 1], ["0%", "500%"]);
+  const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+
+  return (
+    <div
+      className="parrallax"
+      ref={ref}
+      style={{
+        background:
+          type === "services"
+            ? "Linear-gradient(180deg, #111132, #0c0c1d)"
+            : "Linear-gradient(180deg, #111132, #505064)",
+      }}
+    >
+      <motion.h1 style={{ y: yText }}>
+        {type === "services"
+          ? "¿Qué te ofrezco?"
+          : "¿Quieres ver mis trabajos?"}
+      </motion.h1>
+      <motion.div className="mountains"></motion.div>
+      <motion.div
+        className="planets"
+        style={{
+          y: yBg,
+          backgroundImage: `url(${type === "services" ? planets : sun})`,
+        }}
+      ></motion.div>
+      <motion.div style={{ x: yBg }} className="stars"></motion.div>
+    </div>
+  );
+};
+
+export default Parrallax;

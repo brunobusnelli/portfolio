@@ -1,0 +1,195 @@
+.navbar {
+    height:  50px;
+    .wrapper {
+        max-width: 1000px;
+        height: 100%;
+        margin:  auto  !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.5rem;
+    }
+    span {
+        font-weight: bold;
+    }
+    .social {
+        display: flex;
+        gap: 20px;
+        margin-top: 12px;
+            .bi-linkedin, .bi-github {
+                transition: 0.2s;
+            }
+            .bi-linkedin:hover, .bi-github:hover {
+                color: rebeccapurple;
+            }
+    }
+}
+
+
+$breakpoint-s: 374px;
+$breakpoint-m: 375px;
+$breakpoint-l: 425px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-laptopL: 1440px;
+$breakpoint-monitor: 1920px;
+$breakpoint-4k: 2560px;
+
+
+@media screen and (max-width: $breakpoint-s) {
+    .navbar {
+        .wrapper {
+            justify-content: flex-end;
+        }
+        span {
+            display: none;
+        }
+        .social {
+            margin-right: 15px;
+            a {
+                width: 28px;
+                height: 28px;
+            }
+               
+        }
+    }
+}
+@media screen and (min-width: $breakpoint-m) {
+    .navbar {
+        .wrapper {
+            justify-content: flex-end;
+        }
+        span {
+            display: none;
+        }
+        .social {
+            margin-right: 15px;
+            a {
+                width: 28px;
+                height: 28px;
+            }
+               
+        }
+    }
+}
+@media screen and (min-width: $breakpoint-l) {
+    .navbar {
+        .social {
+            a {
+                width: 31px;
+                height: 31px;
+                .bi-linkedin, .bi-github {
+                    width: 31px;
+                    height: 31px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $breakpoint-tablet) {
+    .navbar {
+        .wrapper {
+            width: 70%;
+            justify-content: space-between;
+        }
+        span {
+            display: block;
+            margin-top: 20px;
+        }
+        .social {
+            margin-right: 0px;      
+            gap: 30px;         
+        }
+    }
+}
+@media screen and (min-width: $breakpoint-laptop) {
+    .navbar {
+        height: 70px;
+        .wrapper {
+            width: 70%;
+            justify-content: space-between;
+        }
+        span {
+            display: block;
+            margin-top: 20px;
+            font-size: 1.7rem;
+        }
+        .social {
+            margin-right: 0px;      
+            gap: 25px;  
+        }
+    }
+}
+@media screen and (min-width: $breakpoint-laptopL) {
+    .navbar {
+        height: 80px;
+        .wrapper {
+            max-width: 90%;
+            justify-content: space-between;
+        }
+        span {
+            display: block;
+            margin-top: 20px;
+            font-size: 2.7rem;
+        }
+        .social {
+            margin-right: 0px;  
+            padding-top: 10px;    
+            gap: 28px;
+            a {
+                width: 49px;
+                height: 49px;
+                .bi-linkedin, .bi-github {
+                    width: 49px;
+                    height: 49px;
+                }
+            }         
+        }
+    }
+}
+@media screen and (min-width: $breakpoint-monitor) {
+    .navbar {
+        height: 90px;
+        .wrapper {
+            width: 80%;
+        }
+        span {
+            display: block;
+            margin-top: 28px;
+            font-size: 3rem;
+        }
+        .social {
+            padding-top: 18px;    
+            gap: 45px;
+            a {
+                width: 53px;
+                height: 53px;
+                .bi-linkedin, .bi-github {
+                    width: 53px;
+                    height: 53px;
+                }
+            }         
+        }
+    }
+}
+@media screen and (min-width: $breakpoint-4k) {
+    .navbar {
+        span {
+            display: block;
+            margin-top: 28px;
+            font-size: 3.4rem;
+        }
+        .social {
+            padding-top: 18px;    
+            gap: 50px;
+            a {
+                width: 56px;
+                height: 56px;
+                .bi-linkedin, .bi-github {
+                    width: 56px;
+                    height: 56px;
+                }
+            }         
+        }
+    }
+}

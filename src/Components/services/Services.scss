@@ -1,0 +1,610 @@
+.services {
+  background-color: linear-gradient(180deg, #0c0c1d, #111132);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+    .textContainer{
+        flex: 1;
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+            p {
+              font-weight: 200;
+              font-size: 17px;
+              color: gray;
+              text-align: right;
+            }
+            hr {
+              width: 300px;
+              border: 1px solid gray;
+            }
+    }
+    .tittleContainer{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+            .tittle {
+              display: flex;
+              align-items: center;
+              gap: 50px;  
+                img{
+                    width: 225px;
+                    height: 60px;
+                    border-radius: 50px;
+                    object-fit: cover;
+                }
+                h1 {
+                    font-size: 56px;
+                    font-weight: 1;
+                }
+                button {
+                    width: 225px;
+                    height: 60px;
+                    border-radius: 50px;
+                    background-color: rebeccapurple;
+                    color: white;
+                    font-size: 18px;
+                    cursor: pointer;
+                    transition: 0.2s;
+                    border: none;
+                }
+                button:hover{
+                    background-color: #0c0c1d;
+                    color: white;
+                    border: 1px solid rebeccapurple;
+                }
+            }
+    }
+    .listContainer{
+        flex: 2;
+        display: flex;
+        max-width: 1050px;
+        margin: auto;
+        gap: 10px;
+        margin-bottom: 1rem;
+            .box {
+                width: 260px;
+                padding: 20px;
+                border: 0.5px solid rgba(128, 128, 128, 0.247);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                p {
+                    font-size: 16.8px;
+                }
+                button {
+                    padding: 7px;
+                    background-color: orange;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+    }
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 390px) {
+    .services {
+            .textContainer{
+                width: 100%;
+                flex: 0;
+                text-align: center;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 3.5rem;
+                margin-bottom: 1.5rem;
+
+                  p {
+                    text-align: center;
+                    font-size: 17px;
+                  }
+                  hr {
+                    border-top: 0.5px solid gray;
+                    width: 300px;
+                  }
+            }
+            .tittleContainer{
+                    flex: 0.9;
+                    width: 100%;
+                    .tittle {
+                        flex-direction: column;
+                        text-align: center;
+                        gap: 20px;
+                        img {
+                            width: 215px;
+                            height: 57px;
+                            display: none;
+                        }
+                        h1 {
+                            font-size: 26px;
+                        }
+                        button {
+                            font-size: 15px;
+                            width: 200px;
+                            height: 50px;
+                        }
+                    }
+            }
+            .listContainer{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                gap: 20px;
+                .box {
+                    padding: 10px;
+                    width: 80%;
+                    text-align: center;
+                    h2 {
+                        font-size: 15px;
+                        padding-bottom: 6px;
+                    }
+                    p {
+                        font-size: 12px;
+                    }
+                }
+                .mantenimiento {
+                    display: none;
+                }
+            }
+      }
+}
+@media screen and (min-width: 400px) and (max-width: 475px) {
+    .services {
+            .textContainer{
+                width: 100%;
+                flex: 0;
+                text-align: center;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 3.5rem;
+                margin-bottom: 1.5rem;
+                  p {
+                    text-align: center;
+                    font-size: 16.5px;
+                  }
+                  hr {
+                    border-top: 0.5px solid gray;
+                    width: 300px;
+                  }
+            }
+            .tittleContainer{
+                    flex: 1;
+                    width: 100%;
+                    .tittle {
+                        flex-direction: column;
+                        text-align: center;
+                        gap: 20px;
+                        img {
+                            width: 215px;
+                            height: 57px;
+                        }
+                        h1 {
+                            font-size: 32px;
+                        }
+                        button {
+                            font-size: 16px;
+                            width: 220px;
+                            height: 55px;
+                        }
+                    }
+            }
+            .listContainer{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                gap: 20px;
+                .box {
+                    padding: 10px;
+                    width: 80%;
+                    text-align: center;
+                    h2 {
+                        font-size: 18px;
+                        padding-bottom: 6px;
+                    }
+                    p {
+                        font-size: 14.6px;
+                    }
+                }
+                .mantenimiento {
+                    display: none;
+                }
+            }
+      }
+}
+@media screen and (min-width: 700px) and (max-width: 800px) {
+    .services {
+            .textContainer{
+                width: 100%;
+                flex: 0;
+                text-align: center;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 2.5rem;
+                margin-bottom: 1.5rem;
+                  p {
+                    text-align: center;
+                    font-size: 28px;
+                  }
+                  hr {
+                    border-top: 0.5px solid gray;
+                    width: 80%;
+                  }
+            }
+            .tittleContainer{
+                    flex: 1;
+                    width: 100%;
+                    .tittle {
+                        flex-direction: column;
+                        text-align: center;
+                        gap: 20px;
+                        img {
+                            width: 280px;
+                            height: 80px;
+                        }
+                        h1 {
+                            font-size: 45px;
+                        }
+                        button {
+                            font-size: 24px;
+                            width: 320px;
+                            height: 85px;
+                        }
+                    }
+            }
+            .listContainer{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                gap: 20px;
+                .box {
+                    padding: 10px;
+                    width: 80%;
+                    text-align: center;
+                    h2 {
+                        font-size: 28px;
+                        padding-bottom: 6px;
+                    }
+                    p {
+                        font-size: 19.6px;
+                    }
+                }
+                .mantenimiento {
+                    display: none;
+                }
+            }
+      }
+}
+@media screen and (min-width: 801px) and (max-width: 980px) {
+    .services {
+            .textContainer{
+                width: 100%;
+                flex: 0;
+                text-align: center;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 2.5rem;
+                margin-bottom: 1.5rem;
+                  p {
+                    text-align: center;
+                    font-size: 28px;
+                  }
+                  hr {
+                    border-top: 0.5px solid gray;
+                    width: 80%;
+                  }
+            }
+            .tittleContainer{
+                    flex: 1;
+                    width: 100%;
+                    .tittle {
+                        flex-direction: column;
+                        text-align: center;
+                        gap: 20px;
+                        img {
+                            width: 280px;
+                            height: 80px;
+                        }
+                        h1 {
+                            font-size: 48px;
+                        }
+                        button {
+                            font-size: 26px;
+                            width: 328px;
+                            height: 85px;
+                        }
+                    }
+            }
+            .listContainer{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                gap: 20px;
+                .box {
+                    padding: 10px;
+                    width: 80%;
+                    text-align: center;
+                    h2 {
+                        font-size: 28px;
+                        padding-bottom: 6px;
+                    }
+                    p {
+                        font-size: 20px;
+                    }
+                }
+                .mantenimiento {
+                    display: block;
+                }
+            }
+      }
+}
+@media screen and (min-width: 1000px) and (max-width: 1350px) {
+    .services {
+        background-color: linear-gradient(180deg, #0c0c1d, #111132);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+          .textContainer{
+              flex: 1;
+              align-self: flex-end;
+              display: flex;
+              align-items: center;
+              gap: 20px;
+                  p {
+                    font-weight: 200;
+                    font-size: 30px;
+                    color: gray;
+                  }
+                  hr {
+                    width: 300px;
+                  }
+          }
+          .tittleContainer{
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+                  .tittle {
+                    display: flex;
+                    align-items: center;
+                    gap: 50px;  
+                      img{
+                          width: 250px;
+                          height: 70px;
+                          border-radius: 50px;
+                          object-fit: cover;
+                      }
+                      h1 {
+                          font-size: 70px;
+                          font-weight: 1;
+                      }
+                      button {
+                          width: 250px;
+                          height: 70px;
+                          border-radius: 50px;
+                          color: white;
+                          font-size: 20px;
+                          cursor: pointer;
+                          transition: 0.2s;
+                          border: none;
+                      }
+                      button:hover{
+                          background-color: #0c0c1d;
+                          color: white;
+                          border: 1px solid rebeccapurple;
+                      }
+                  }
+          }
+          .listContainer{
+              flex: 2;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              max-width: 900px;
+              margin: auto;
+              gap: 30px;
+              margin-bottom: 1rem;
+                  .box {
+                      width: 400px;
+                      padding: 20px;
+                      border: 0.5px solid rgba(128, 128, 128, 0.247);
+                      display: flex;
+                      align-items: center;
+                          h2 {
+                            font-size: 40.8px;
+                          }
+                          p {
+                              font-size: 21px;
+                              text-align: center;
+                          }
+                          button {
+                              padding: 7px;
+                              background-color: orange;
+                              border: none;
+                              cursor: pointer;
+                          }
+                  }
+          }
+      
+      }
+}
+@media screen and (min-width: 1400px) and (max-width: 1890px) {
+    .services {
+        background-color: linear-gradient(180deg, #0c0c1d, #111132);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+          .textContainer{
+              flex: 1;
+              align-self: flex-end;
+              display: flex;
+              align-items: center;
+              gap: 20px;
+                  p {
+                    font-weight: 200;
+                    font-size: 30px;
+                    color: gray;
+                  }
+                  hr {
+                    width: 300px;
+                  }
+          }
+          .tittleContainer{
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+                  .tittle {
+                    display: flex;
+                    align-items: center;
+                    gap: 50px;  
+                      img{
+                          width: 250px;
+                          height: 70px;
+                          border-radius: 50px;
+                          object-fit: cover;
+                      }
+                      h1 {
+                          font-size: 70px;
+                          font-weight: 1;
+                      }
+                      button {
+                          width: 250px;
+                          height: 70px;
+                          border-radius: 50px;
+                          color: white;
+                          font-size: 20px;
+                          cursor: pointer;
+                          transition: 0.2s;
+                          border: none;
+                      }
+                      button:hover{
+                          background-color: #0c0c1d;
+                          color: white;
+                          border: 1px solid rebeccapurple;
+                      }
+                  }
+          }
+          .listContainer{
+              flex: 2.5;
+              display: flex;
+              align-items: center;
+              max-width: 1400px;
+              margin: auto;
+              margin-bottom: 1rem;
+                  .box {
+                      width: 800px;
+                      height: 450px;
+                      padding: 20px;
+                      border: 0.5px solid rgba(128, 128, 128, 0.247);
+                      display: flex;
+                          h2 {
+                            font-size: 40.8px;
+                          }
+                          p {
+                              font-size: 28px;
+                          }
+                          button {
+                              padding: 7px;
+                              background-color: orange;
+                              border: none;
+                              cursor: pointer;
+                          }
+                  }
+          }
+      
+      }
+}
+@media screen and (min-width: 1900px) {
+    .services {
+        background-color: linear-gradient(180deg, #0c0c1d, #111132);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+          .textContainer{
+              flex: 1;
+              align-self: flex-end;
+              display: flex;
+              align-items: center;
+              gap: 20px;
+                  p {
+                    font-weight: 200;
+                    font-size: 32px;
+                    color: gray;
+                  }
+                  hr {
+                    width: 400px;
+                  }
+          }
+          .tittleContainer{
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+                  .tittle {
+                    display: flex;
+                    align-items: center;
+                    gap: 50px;  
+                      img{
+                          width: 250px;
+                          height: 70px;
+                          border-radius: 50px;
+                          object-fit: cover;
+                      }
+                      h1 {
+                          font-size: 75px;
+                          font-weight: 1;
+                      }
+                      button {
+                          width: 300px;
+                          height: 90px;
+                          font-size: 25px;
+                      }
+                      button:hover{
+                          background-color: #0c0c1d;
+                          color: white;
+                          border: 1px solid rebeccapurple;
+                      }
+                  }
+          }
+          .listContainer{
+              flex: 2.5;
+              display: flex;
+              align-items: center;
+              max-width: 1600px;
+              margin: auto;
+              margin-bottom: 1rem;
+              gap: 20px;
+                  .box {
+                      width: 800px;
+                      height: 450px;
+                      padding: 20px;
+                      border: 0.5px solid rgba(128, 128, 128, 0.247);
+                      display: flex;
+                          h2 {
+                            font-size: 40.8px;
+                          }
+                          p {
+                              font-size: 30px;
+                          }
+                          button {
+                              padding: 7px;
+                              background-color: orange;
+                              border: none;
+                              cursor: pointer;
+                          }
+                  }
+          }
+      
+      }
+}
