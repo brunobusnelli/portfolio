@@ -18,7 +18,7 @@ const items = [
     id: 2,
     title: "RC Autos",
     img: RCautos,
-    desc: "Videojuego en 2D con múltiples niveles, en el que al desviarte del camino designado, comienzas de nuevo y pierdes una vida. Además, cuentas con un cronómetro que registra tu tiempo récord y te desafía a superarlo en cada intento.",
+    desc: "Se trata de un sitio web interactivo donde los usuarios pueden explorar una amplia gama de autos disponibles para la venta. La plataforma está desarrollada utilizando JavaScript, lo que permite una experiencia de usuario fluida y receptiva. Los visitantes pueden buscar vehículos por modelo.",
     link: "https://rcautos.netlify.app/",
   },
   {
